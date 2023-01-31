@@ -1,0 +1,165 @@
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  transition: 0.2s all;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .6px;
+  color: white;
+}
+
+
+.container{
+  max-width: 1336px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a:hover{
+  color: #00868A;
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
+  background: lightgray;
+  color: #00868A;
+}
+
+button{
+  border: none;
+  background: #00868A;
+  color: white;
+}
+
+.overlay{
+  *{
+    color: black;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00000070;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 0 20px;
+  z-index: 105;
+
+  &__popup{
+    max-width: 770px;
+    width: 100%;
+    background: white;
+    border-radius: 30px;
+    position: relative;
+    &-close{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  &__form{
+    padding: 52px 70px 52px 52px;
+  }
+  &__title{
+    color: #00868A;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 10px;
+    &-text{
+      font-size: 20px;
+    }
+  }
+  &__field{
+    padding-left: 10px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid #00868A;
+    &::placeholder{
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__btn{
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+}
+
+.more{
+  *{
+    color: black;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00000070;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 0 20px;
+  &__popup{
+    max-width: 1199px;
+    width: 100%;
+    background: white;
+    border-radius: 30px;
+    position: relative;
+    padding: 52px 30px 52px 52px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  &__title{
+    font-size: 30px;
+    color: #00868A;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-size: 19px;
+    display: flex;
+    column-gap: 15px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+}
+
+.bold {
+  *{
+    font-weight: 800!important;
+  }
+  transition: 0s;
+}
+
+@import "header";
+@import "begin";
+@import "info";
+@import "actual";
+@import "last";
+@import "footer";
